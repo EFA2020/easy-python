@@ -1,0 +1,38 @@
+#Hi guys.
+#This is the easiest calculator than you can create codeing
+
+
+# a normal version calculator
+# in here you must add lots of statments to choose from operators so it will take long so i summerized it in this 4 operations 
+
+def calculator(op, numbers):
+    print(numbers)
+    try: 
+        num_1, num_2 = [int(i) for i in numbers.split(' ')][:2]
+    except ValueError:
+        print("Sorry you didn't enterd the integer numbers, please try again")
+        return
+    if op == '+':
+        print(num_1 + num_2)
+    elif op == '-':
+        print(num_1 - num_2)    
+    elif op == '*':
+        print(num_1 * num_2)
+    elif op == '/':
+        if num_2 == 0: 
+            print("sorry we can't divid a number to zero")
+            return
+        print(num_1 / num_2)
+    else:
+        print("Please write another operation, we don't have it right now")
+        
+print("Welcom to EFA's Calculator, please Enter +, /, - , * as operator and to numbers as operands")        
+op = input('Please Enter The Operation: ')   
+numbers = input('Please Enter Your Two Numbers in an order: ')
+calculator(op, numbers) 
+
+
+
+
+# The Sortest Calculator
+print(eval(input("Please Enter Your What you want to calculate here: ")))
