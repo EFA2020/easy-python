@@ -12,7 +12,14 @@ print("my name is: "+name+" and my lastname is: "+lastname+" and my age is: "+ag
 ###this code doesn't works in python(beacuse of (23) that is int and you can't add string to integers)
 
 
-#new way(easy string)
+# new way(easy string)
 #it is only works for python
 
 print(f'my name is: {name} and my lastname is: {lastname} and my age is: {age}')
+
+
+# Iterate through a string
+for i in "welcome to this page":
+    print(i)
+# It will print:
+# w e l c o m e  t o s t r i n g
